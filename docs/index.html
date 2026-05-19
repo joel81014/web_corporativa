@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FoodLogistic — Inici</title>
+  <meta name="description" content="FoodLogistic ofereix solucions integrals de transport i logística per a la indústria alimentària. Qualitat, rapidesa i traçabilitat garantides."/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header class="nav-header" id="navHeader">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">FL</span>
+        <span class="logo-text">FoodLogistic</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inici</a></li>
+        <li><a href="serveis.html">Serveis</a></li>
+        <li><a href="sobre-nosaltres.html">Sobre nosaltres</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Obrir menú" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html" onclick="toggleMenu()">Inici</a></li>
+        <li><a href="serveis.html" onclick="toggleMenu()">Serveis</a></li>
+        <li><a href="sobre-nosaltres.html" onclick="toggleMenu()">Sobre nosaltres</a></li>
+        <li><a href="contacte.html" onclick="toggleMenu()">Contacte</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-blob blob1"></div>
+      <div class="hero-blob blob2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-pill">Logística Alimentària de Confiança</span>
+      <h1 class="hero-title">Del productor <em>al plat,</em><br/>sense trencaments.</h1>
+      <p class="hero-sub">Gestionem la cadena de fred, el transport i la traçabilitat dels teus productes alimentaris amb la màxima garantia de qualitat i compliment normatiu.</p>
+      <div class="hero-cta">
+        <a href="contacte.html" class="btn-primary">Sol·licita un pressupost</a>
+        <a href="serveis.html" class="btn-ghost">Veure serveis →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>+500</strong><span>Clients actius</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>98%</strong><span>Entregues a temps</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>15 anys</strong><span>d'experiència</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card card-float">
+        <div class="card-icon">🌡️</div>
+        <div><strong>Cadena de fred activa</strong><p>2–8°C garantits</p></div>
+      </div>
+      <div class="hero-card card-float2">
+        <div class="card-icon">📍</div>
+        <div><strong>Traçabilitat en temps real</strong><p>GPS integrat</p></div>
+      </div>
+      <div class="hero-mockup">
+        <div class="mockup-inner">
+          <div class="mockup-line l1"></div>
+          <div class="mockup-line l2"></div>
+          <div class="mockup-line l3"></div>
+          <div class="mockup-route">
+            <div class="route-dot origin"></div>
+            <div class="route-path"></div>
+            <div class="route-dot dest"></div>
+          </div>
+          <div class="mockup-label origin-lbl">Barcelona</div>
+          <div class="mockup-label dest-lbl">Madrid</div>
+          <div class="truck-icon">🚛</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="serveis-highlight">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">El que fem</span>
+        <h2>Solucions per a tota<br/><em>la cadena alimentària</em></h2>
+        <p>Des de la recollida fins al punt de venda, cobrim cada pas amb garanties de qualitat.</p>
+      </div>
+      <div class="highlight-grid">
+        <div class="highlight-card">
+          <span class="h-icon">❄️</span>
+          <h3>Transport en fred</h3>
+          <p>Cadena de fred ininterrompuda amb vehicles certificats per a refrigerats i congelats.</p>
+        </div>
+        <div class="highlight-card">
+          <span class="h-icon">📦</span>
+          <h3>Emmagatzematge</h3>
+          <p>Magatzems certificats BRC i IFS amb control d'humitat i temperatura en tot moment.</p>
+        </div>
+        <div class="highlight-card">
+          <span class="h-icon">🗺️</span>
+          <h3>Distribució last mile</h3>
+          <p>Entrega optimitzada al punt de venda i hostaleria amb mínima empremta de carboni.</p>
+        </div>
+        <div class="highlight-card">
+          <span class="h-icon">📊</span>
+          <h3>Traçabilitat digital</h3>
+          <p>Plataforma pròpia per al seguiment en temps real amb alertes automàtiques de temperatura.</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="serveis.html" class="btn-primary">Veure tots els serveis</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <div>
+        <h2>Preparat per millorar<br/><em>la teva logística alimentària?</em></h2>
+        <p>Parla amb el nostre equip i obtén una proposta personalitzada sense compromís.</p>
+      </div>
+      <a href="contacte.html" class="btn-primary btn-light">Sol·licita informació →</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.5rem;">
+          <span class="logo-mark small">FL</span>
+          <span class="logo-text" style="color:white;font-weight:600;">FoodLogistic</span>
+        </div>
+        <p>Solucions integrals de logística alimentària a Catalunya i Espanya.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegació</h4>
+        <ul>
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="serveis.html">Serveis</a></li>
+          <li><a href="sobre-nosaltres.html">Sobre nosaltres</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="avis-legal.html">Avís legal (LSSI-CE)</a></li>
+          <li><a href="politica-privacitat.html">Política de privacitat</a></li>
+          <li><a href="politica-cookies.html">Política de cookies</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacte ràpid</h4>
+        <p>📍 C/ de la Indústria, 42 — Vic</p>
+        <p>📞 +34 938 000 000</p>
+        <p>✉️ info@foodlogistic.cat</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 FoodLogistic, S.L. — Tots els drets reservats | NIF: B-00000000 | Inscrita al Registre Mercantil de Barcelona</p>
+      <p class="footer-legal-note">Empresa subjecta a la <strong>LOPDGDD (Llei Orgànica 3/2018)</strong> i la <strong>LSSI-CE (Llei 34/2002)</strong></p>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-content">
+      <div class="cookie-text">
+        <span class="cookie-icon">🍪</span>
+        <div>
+          <strong>Utilitzem cookies</strong>
+          <p>Fem servir cookies pròpies i de tercers (StatCounter) per analitzar el trànsit. <a href="politica-cookies.html">Més informació</a></p>
+        </div>
+      </div>
+      <div class="cookie-actions">
+        <button class="cookie-btn reject" onclick="rejectCookies()">Rebutjar</button>
+        <button class="cookie-btn config" onclick="window.location.href='politica-cookies.html'">Configurar</button>
+        <button class="cookie-btn accept" onclick="acceptCookies()">Acceptar totes</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll',()=>document.getElementById('navHeader').classList.toggle('scrolled',window.scrollY>40));
+    function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+    function setCookie(n,v,d){const x=new Date();x.setTime(x.getTime()+(d*86400000));document.cookie=n+'='+v+';expires='+x.toUTCString()+';path=/';}
+    function getCookie(n){for(let c of document.cookie.split(';')){c=c.trim();if(c.startsWith(n+'='))return c.substring(n.length+1);}return '';}
+    function acceptCookies(){setCookie('cookieConsent','accepted',365);document.getElementById('cookieBanner').classList.remove('visible');}
+    function rejectCookies(){setCookie('cookieConsent','rejected',365);document.getElementById('cookieBanner').classList.remove('visible');}
+    window.addEventListener('DOMContentLoaded',()=>{
+      if(!getCookie('cookieConsent'))setTimeout(()=>document.getElementById('cookieBanner').classList.add('visible'),800);
+      document.querySelectorAll('.highlight-card').forEach(el=>{el.classList.add('reveal');new IntersectionObserver(([e])=>{if(e.isIntersecting)e.target.classList.add('visible');},{threshold:0.1}).observe(el);});
+    });
+  </script>
+  <!-- STATCOUNTER: col·loca aquí el codi de StatCounter -->
+</body>
+</html>

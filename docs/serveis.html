@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Serveis — FoodLogistic</title>
+  <meta name="description" content="Descobreix tots els serveis de logística alimentària de FoodLogistic: transport en fred, emmagatzematge, distribució last mile, traçabilitat i més."/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header class="nav-header scrolled" id="navHeader">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">FL</span>
+        <span class="logo-text">FoodLogistic</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="serveis.html" class="active">Serveis</a></li>
+        <li><a href="sobre-nosaltres.html">Sobre nosaltres</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Obrir menú" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html" onclick="toggleMenu()">Inici</a></li>
+        <li><a href="serveis.html" onclick="toggleMenu()">Serveis</a></li>
+        <li><a href="sobre-nosaltres.html" onclick="toggleMenu()">Sobre nosaltres</a></li>
+        <li><a href="contacte.html" onclick="toggleMenu()">Contacte</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="hero-bg">
+      <div class="hero-blob blob1"></div>
+      <div class="hero-blob blob2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container page-hero-content">
+      <span class="hero-pill">El que fem</span>
+      <h1 class="hero-title">Serveis integrals<br/><em>per a la indústria alimentària</em></h1>
+      <p class="hero-sub">Cobertura total de la cadena logística, des de la recollida fins al punt de venda, amb la màxima garantia de qualitat i traçabilitat.</p>
+    </div>
+  </section>
+
+  <section class="serveis" style="padding-top:4rem;">
+    <div class="container">
+      <div class="serveis-grid">
+
+        <div class="servei-card featured">
+          <div class="servei-icon">❄️</div>
+          <h3>Transport en fred</h3>
+          <p>Vehicles equipats amb sistemes de refrigeració i congelació certificats. Mantenim la cadena de fred de manera ininterrompuda durant tot el trajecte, des de la recollida fins al lliurament.</p>
+          <ul>
+            <li>Refrigerat (0–4°C)</li>
+            <li>Congelat (−18°C / −25°C)</li>
+            <li>Temperatura controlada (8–15°C)</li>
+            <li>Registre continu de temperatura</li>
+          </ul>
+          <a href="contacte.html" class="servei-link">Sol·licita informació →</a>
+        </div>
+
+        <div class="servei-card">
+          <div class="servei-icon">📦</div>
+          <h3>Emmagatzematge</h3>
+          <p>Magatzems logístics especialitzats amb control d'humitat, temperatura i seguretat alimentària certificada per BRC i IFS. Gestió integral de l'estoc en temps real.</p>
+          <a href="contacte.html" class="servei-link">Sol·licita informació →</a>
+        </div>
+
+        <div class="servei-card">
+          <div class="servei-icon">🗺️</div>
+          <h3>Distribució last mile</h3>
+          <p>Entrega al punt de venda, hostaleria i comerç de proximitat. Rutes optimitzades per a màxima eficiència i mínima empremta de carboni. Cobertura a tot Catalunya.</p>
+          <a href="contacte.html" class="servei-link">Sol·licita informació →</a>
+        </div>
+
+        <div class="servei-card">
+          <div class="servei-icon">📊</div>
+          <h3>Traçabilitat i control</h3>
+          <p>Plataforma digital pròpia per al seguiment en temps real de cada enviament, amb registres de temperatura, alertes automàtiques i informes detallats per als nostres clients.</p>
+          <a href="contacte.html" class="servei-link">Sol·licita informació →</a>
+        </div>
+
+        <div class="servei-card">
+          <div class="servei-icon">🌿</div>
+          <h3>Logística sostenible</h3>
+          <p>Flota amb vehicles elèctrics i híbrids. Compensació d'emissions CO₂ certificada. Comprometuts amb el medi ambient i la reducció de la petjada ecològica del sector.</p>
+          <a href="contacte.html" class="servei-link">Sol·licita informació →</a>
+        </div>
+
+        <div class="servei-card">
+          <div class="servei-icon">⚖️</div>
+          <h3>Compliment normatiu</h3>
+          <p>Assessorament i gestió documental per al compliment del Reglament (CE) 852/2004, APPCC i normativa d'etiquetatge alimentari. Auditors qualificats al teu servei.</p>
+          <a href="contacte.html" class="servei-link">Sol·licita informació →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner" style="margin-top:4rem;">
+    <div class="container cta-inner">
+      <div>
+        <h2>Tens un projecte<br/><em>logístic?</em></h2>
+        <p>Contacta amb nosaltres i t'enviarem una proposta personalitzada.</p>
+      </div>
+      <a href="contacte.html" class="btn-primary btn-light">Parla amb nosaltres →</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.5rem;">
+          <span class="logo-mark small">FL</span>
+          <span class="logo-text" style="color:white;font-weight:600;">FoodLogistic</span>
+        </div>
+        <p>Solucions integrals de logística alimentària a Catalunya i Espanya.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegació</h4>
+        <ul>
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="serveis.html">Serveis</a></li>
+          <li><a href="sobre-nosaltres.html">Sobre nosaltres</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="avis-legal.html">Avís legal (LSSI-CE)</a></li>
+          <li><a href="politica-privacitat.html">Política de privacitat</a></li>
+          <li><a href="politica-cookies.html">Política de cookies</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacte ràpid</h4>
+        <p>📍 C/ de la Indústria, 42 — Vic</p>
+        <p>📞 +34 938 000 000</p>
+        <p>✉️ info@foodlogistic.cat</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 FoodLogistic, S.L. — Tots els drets reservats | NIF: B-00000000</p>
+      <p class="footer-legal-note">Empresa subjecta a la <strong>LOPDGDD (Llei Orgànica 3/2018)</strong> i la <strong>LSSI-CE (Llei 34/2002)</strong></p>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll',()=>document.getElementById('navHeader').classList.toggle('scrolled',window.scrollY>40));
+    function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+    window.addEventListener('DOMContentLoaded',()=>{
+      document.querySelectorAll('.servei-card').forEach(el=>{el.classList.add('reveal');new IntersectionObserver(([e])=>{if(e.isIntersecting)e.target.classList.add('visible');},{threshold:0.1}).observe(el);});
+    });
+  </script>
+  <!-- STATCOUNTER: col·loca aquí el codi de StatCounter -->
+</body>
+</html>

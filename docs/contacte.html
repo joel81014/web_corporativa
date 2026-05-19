@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacte — FoodLogistic</title>
+  <meta name="description" content="Contacta amb FoodLogistic. Omple el formulari i t'enviarem una proposta personalitzada per als teus serveis logístics alimentaris."/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header class="nav-header scrolled" id="navHeader">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">FL</span>
+        <span class="logo-text">FoodLogistic</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="serveis.html">Serveis</a></li>
+        <li><a href="sobre-nosaltres.html">Sobre nosaltres</a></li>
+        <li><a href="contacte.html" class="active">Contacte</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Obrir menú" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html" onclick="toggleMenu()">Inici</a></li>
+        <li><a href="serveis.html" onclick="toggleMenu()">Serveis</a></li>
+        <li><a href="sobre-nosaltres.html" onclick="toggleMenu()">Sobre nosaltres</a></li>
+        <li><a href="contacte.html" onclick="toggleMenu()">Contacte</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="contacte" style="padding-top:120px; min-height:100vh;">
+    <div class="container contacte-inner">
+      <div class="contacte-info">
+        <span class="section-tag light">Parlem</span>
+        <h1 style="font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:600;line-height:1.2;margin-bottom:1rem;">Tens un projecte<br/><em style="font-style:italic;color:var(--green-light);">logístic?</em></h1>
+        <p style="color:rgba(255,255,255,0.7);line-height:1.7;margin-bottom:2rem;">Explica'ns les teves necessitats i t'enviarem una proposta personalitzada sense cap compromís. El nostre equip et respondrà en menys de 24 hores.</p>
+        <div class="contacte-dades">
+          <div class="dada">
+            <span>📍</span>
+            <div>
+              <strong>Seu central</strong>
+              <p>Carrer de la Indústria, 42<br/>08500 Vic, Barcelona</p>
+            </div>
+          </div>
+          <div class="dada">
+            <span>📞</span>
+            <div>
+              <strong>Telèfon</strong>
+              <p>+34 938 000 000</p>
+            </div>
+          </div>
+          <div class="dada">
+            <span>✉️</span>
+            <div>
+              <strong>Correu electrònic</strong>
+              <p>info@foodlogistic.cat</p>
+            </div>
+          </div>
+          <div class="dada">
+            <span>🕐</span>
+            <div>
+              <strong>Horari d'atenció</strong>
+              <p>Dilluns–Divendres: 8h–18h</p>
+            </div>
+          </div>
+          <div class="dada">
+            <span>🏭</span>
+            <div>
+              <strong>Plataformes logístiques</strong>
+              <p>Vic · Mercabarna · Molins de Rei</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacte-form-wrap">
+        <form class="contacte-form" onsubmit="handleSubmit(event)">
+          <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:600;color:var(--green-dark);margin-bottom:1.5rem;">Sol·licita informació</h2>
+
+          <div class="form-group">
+            <label for="nom">Nom complet *</label>
+            <input type="text" id="nom" name="nom" placeholder="El teu nom i cognoms" required/>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Correu electrònic *</label>
+              <input type="email" id="email" name="email" placeholder="nom@empresa.com" required/>
+            </div>
+            <div class="form-group">
+              <label for="telefon">Telèfon de contacte *</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="+34 600 000 000" required/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="servei">Servei d'interès</label>
+            <select id="servei" name="servei">
+              <option value="">Selecciona un servei...</option>
+              <option value="transport-fred">Transport en fred</option>
+              <option value="emmagatzematge">Emmagatzematge</option>
+              <option value="distribucio">Distribució last mile</option>
+              <option value="tracabilitat">Traçabilitat i control</option>
+              <option value="sostenible">Logística sostenible</option>
+              <option value="normatiu">Compliment normatiu</option>
+              <option value="altres">Altres</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="missatge">Missatge *</label>
+            <textarea id="missatge" name="missatge" rows="4" placeholder="Descriu el teu projecte o necessitat logística..." required></textarea>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="privacitat" name="privacitat" required/>
+            <label for="privacitat">* He llegit i accepto la <a href="politica-privacitat.html">Política de Privacitat</a> i consento el tractament de les meves dades personals per gestionar la meva sol·licitud, conforme a la LOPDGDD.</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="comunicacions" name="comunicacions"/>
+            <label for="comunicacions">Autoritzo FoodLogistic, S.L. a enviar-me comunicacions comercials sobre els seus serveis i novetats, d'acord amb l'<a href="avis-legal.html">Avís Legal</a>.</label>
+          </div>
+
+          <button type="submit" class="btn-primary full-width">Enviar sol·licitud</button>
+
+          <div class="form-success" id="formSuccess">
+            ✅ Missatge enviat correctament. Ens posarem en contacte en menys de 24h.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.5rem;">
+          <span class="logo-mark small">FL</span>
+          <span class="logo-text" style="color:white;font-weight:600;">FoodLogistic</span>
+        </div>
+        <p>Solucions integrals de logística alimentària a Catalunya i Espanya.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegació</h4>
+        <ul>
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="serveis.html">Serveis</a></li>
+          <li><a href="sobre-nosaltres.html">Sobre nosaltres</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="avis-legal.html">Avís legal (LSSI-CE)</a></li>
+          <li><a href="politica-privacitat.html">Política de privacitat</a></li>
+          <li><a href="politica-cookies.html">Política de cookies</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacte ràpid</h4>
+        <p>📍 C/ de la Indústria, 42 — Vic</p>
+        <p>📞 +34 938 000 000</p>
+        <p>✉️ info@foodlogistic.cat</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 FoodLogistic, S.L. — Tots els drets reservats | NIF: B-00000000</p>
+      <p class="footer-legal-note">Empresa subjecta a la <strong>LOPDGDD (Llei Orgànica 3/2018)</strong> i la <strong>LSSI-CE (Llei 34/2002)</strong></p>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll',()=>document.getElementById('navHeader').classList.toggle('scrolled',window.scrollY>40));
+    function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+    function handleSubmit(e){
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = 'Enviant...';
+      btn.disabled = true;
+      setTimeout(()=>{
+        document.getElementById('formSuccess').style.display='block';
+        e.target.reset();
+        btn.textContent = 'Enviar sol·licitud';
+        btn.disabled = false;
+        setTimeout(()=>document.getElementById('formSuccess').style.display='none',5000);
+      },800);
+    }
+    window.addEventListener('DOMContentLoaded',()=>{
+      document.querySelectorAll('.dada').forEach(el=>{el.classList.add('reveal');new IntersectionObserver(([e])=>{if(e.isIntersecting)e.target.classList.add('visible');},{threshold:0.1}).observe(el);});
+    });
+  </script>
+  <!-- STATCOUNTER: col·loca aquí el codi de StatCounter -->
+</body>
+</html>
