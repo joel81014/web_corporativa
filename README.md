@@ -13,7 +13,7 @@ Aquesta és la web corporativa de [Foodlogistic], una empresa fictícia dedicada
 
 Per la creació d'aquesta web, s'han utilitzat les següents tecnologies i eines:
 
-- Indiqueu l'eina IA que heu utilitat.
+- Claude
 - HTML5/CSS3
 - Statcounter per l'analítica
 
