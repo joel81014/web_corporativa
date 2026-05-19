@@ -5,8 +5,6 @@ Aquesta és la web corporativa de [Foodlogistic], una empresa fictícia dedicada
 
 ## Demostració
 
-[🌐 URL de la web](https://[joel81014].github.io/[web_corporativa])
-
 [🌐 URL de la web](https://joel81014.github.io/web_corporativa/)
 
 
